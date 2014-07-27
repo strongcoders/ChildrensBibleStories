@@ -24,7 +24,7 @@ public class SelectStoryActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         
-        setContentView(R.layout.select_story);
+        setContentView(R.layout.activity_select_story);
         
         btnOldTestament = (Button) findViewById(R.id.btn_old_testament);
         btnOldTestament.setOnClickListener(new OnClickListener() {

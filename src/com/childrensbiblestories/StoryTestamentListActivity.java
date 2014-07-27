@@ -30,7 +30,7 @@ public class StoryTestamentListActivity extends ListActivity {
         Intent i = getIntent();
         String[] listOfStories = i.getStringArrayExtra("LIST_OF_STORIES");
         
-        setListAdapter(new ArrayAdapter<String>(this, R.layout.story_testament_list,listOfStories));
+        setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_story_testament_list,listOfStories));
         ListView listOfStoriesView = getListView();
         listOfStoriesView.setTextFilterEnabled(true);
         listOfStoriesView.setBackgroundColor(Color.parseColor("#3498DB"));
