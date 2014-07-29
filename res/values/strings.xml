@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Strings for the component labels -->
-    <string name="app_name">"Children's Bible Story"</string>
+    <string name="app_name">"Children's Bible Stories"</string>
     <string name="select_story">"Select Story"</string>
     <string name="settings">"Settings"</string>
     <string name="about">"About"</string>
     <string name="old_testament">"Old Testament"</string>
     <string name="new_testament">"New Testament"</string>
     
-    <!-- String arrays for the list of stories -->
+    <!-- String array for the list of old testament stories -->
     <string-array name="old_testament_list">
         <item>"Noah's Ark"</item>
         <item>"Father Abraham"</item>
@@ -16,6 +16,8 @@
         <item>"Moses"</item>
         <item>"David and Goliath"</item>
     </string-array>
+    
+    <!-- String array for the list of new testament stories -->
     <string-array name="new_testament_list">
         <item>"The Story of Christmas"</item>
         <item>"Jesus' Baptism"</item>
@@ -23,30 +25,20 @@
         <item>"The Prodigal Son"</item>
     </string-array>
     
-    <!-- Strings for the story contents -->
-    <string name="the_story_of_christmas">
-        "        Mary and Joseph went to Bethlehem. It was a long Journey. Mary was soon going to have a baby.
-
-        They arrived in Bethlehem. There was no room for them in the inn. They had to stay in the stable.
-        
-        That night Mary had her baby. She wrapped him in cloth and put him to sleep in the manger.
-
-        During the night in the fields outside Bethlehem shepherds were guarding their sheep.
-        
-        Suddenly an angel appered to the shepherds.  All around them was very bright. They were afraid.
-
-        The angel said to them, "Do not be afraid! I have a good news for you. This night Jesus was born in Bethlehem. Go and see him. He is wrapped in cloth and is lying in the manger."
-        
-        Suddenly a huge number of angels appeared. They sang a hymn praising God. "Glory to God in Heaven. May peace fill the earth. God is with his people."
-
-        After the angels left, the shepherds hurried to Bethlehem.  They wanted to see what the angels had told them about.
-
-        They found Mary and Joseph and saw the baby in the manger.  They were very happy.  Some wise men saw a bright star in the east. They followed the star.
-
-        They carried precious gifts with them to present to Jesus.  They followed the star all the way to Bethlehem. The star stopped over the place where Jesus was.
-
-        The wise men knew that they found Jesus and they were very happy. They went into the house and saw the baby Jesus with his mother Mary. 
-        
-        The wise men knelt down in front of the baby.  They gave gifts to Jesus. They gave him gold and frankincense and myrh."
-    </string>
+    <!-- String array for the story of christmas -->
+    <string-array name="the_story_of_christmas">
+        <item>"Mary and Joseph went to Bethlehem. It was a long Journey. Mary was soon going to have a baby."</item>
+        <item>"They arrived in Bethlehem. There was no room for them in the inn. They had to stay in the stable."</item>
+        <item>"That night Mary had her baby. She wrapped him in cloth and put him to sleep in the manger."</item>
+        <item>"During the night in the fields outside Bethlehem shepherds were guarding their sheep."</item>
+        <item>"Suddenly an angel appered to the shepherds.  All around them was very bright. They were afraid."</item>
+        <item>"The angel said to them, "Do not be afraid! I have a good news for you. This night Jesus was born in Bethlehem. Go and see him. He is wrapped in cloth and is lying in the manger." "</item>
+        <item>"Suddenly a huge number of angels appeared. They sang a hymn praising God. "Glory to God in Heaven. May peace fill the earth. God is with his people." "</item>
+        <item>"After the angels left, the shepherds hurried to Bethlehem.  They wanted to see what the angels had told them about."</item>
+        <item>"They found Mary and Joseph and saw the baby in the manger.  They were very happy.</item>  
+        <item>Some wise men saw a bright star in the east. They followed the star."</item>
+        <item>"They carried precious gifts with them to present to Jesus.  They followed the star all the way to Bethlehem. The star stopped over the place where Jesus was."</item>
+        <item>"The wise men knew that they found Jesus and they were very happy. They went into the house and saw the baby Jesus with his mother Mary."</item>
+        <item>"The wise men knelt down in front of the baby.  They gave gifts to Jesus. They gave him gold and frankincense and myrh.""</item>
+    </string-array>
 </resources>
