@@ -2,7 +2,6 @@ package com.childrensbiblestories;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -33,7 +32,6 @@ public class StoryTestamentListActivity extends ListActivity {
         setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_story_testament_list,listOfStories));
         ListView listOfStoriesView = getListView();
         listOfStoriesView.setTextFilterEnabled(true);
-        listOfStoriesView.setBackgroundColor(Color.parseColor("#3498DB"));
         
         listOfStoriesView.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
