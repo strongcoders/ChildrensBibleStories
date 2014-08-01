@@ -10,9 +10,8 @@
     
     <!-- String array for the list of old testament stories -->
     <string-array name="old_testament_list">
+        <item>"Adam and Eve"</item>
         <item>"Noah's Ark"</item>
-        <item>"Father Abraham"</item>
-        <item>"Joseph the Dreamer"</item>
         <item>"Moses"</item>
         <item>"David and Goliath"</item>
     </string-array>
@@ -20,12 +19,9 @@
     <!-- String array for the list of new testament stories -->
     <string-array name="new_testament_list">
         <item>"The Story of Christmas"</item>
-        <item>"Jesus' Baptism"</item>
-        <item>"The Twelve Apostles"</item>
-        <item>"The Prodigal Son"</item>
     </string-array>
     
-    <!-- String array for the story of christmas -->
+    <!-- String array for The Story of Christmas -->
     <string-array name="the_story_of_christmas">
         <item>"Mary and Joseph went to Bethlehem. It was a long Journey. Mary was soon going to have a baby."</item>
         <item>"They arrived in Bethlehem. There was no room for them in the inn. They had to stay in the stable."</item>
