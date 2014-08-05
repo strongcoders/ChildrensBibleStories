@@ -18,7 +18,9 @@
     
     <!-- String array for the list of new testament stories -->
     <string-array name="new_testament_list">
-        <item>"The Story of Christmas"</item>
+        <item>"The Birth of Jesus"</item>
+        <item>"The Parable of the Prodigal Son"</item>
+        <item>"The Parable of Good Samaritan"</item>
     </string-array>
     
     <!-- String array for The Story of Christmas -->
@@ -27,14 +29,37 @@
         <item>"They arrived in Bethlehem. There was no room for them in the inn. They had to stay in the stable."</item>
         <item>"That night Mary had her baby. She wrapped him in cloth and put him to sleep in the manger."</item>
         <item>"During the night in the fields outside Bethlehem shepherds were guarding their sheep."</item>
-        <item>"Suddenly an angel appered to the shepherds.  All around them was very bright. They were afraid."</item>
-        <item>"The angel said to them, "Do not be afraid! I have a good news for you. This night Jesus was born in Bethlehem. Go and see him. He is wrapped in cloth and is lying in the manger." "</item>
-        <item>"Suddenly a huge number of angels appeared. They sang a hymn praising God. "Glory to God in Heaven. May peace fill the earth. God is with his people." "</item>
+        <item>"Suddenly an angel appeared to the shepherds.  All around them was very bright. They were afraid."</item>
+        <item>"The angel said to them, 'Do not be afraid! I have a good news for you. This night Jesus was born in Bethlehem. Go and see him. He is wrapped in cloth and is lying in the manger.' "</item>
+        <item>"Suddenly a huge number of angels appeared. They sang a hymn praising God. 'Glory to God in Heaven. May peace fill the earth. God is with his people.' "</item>
         <item>"After the angels left, the shepherds hurried to Bethlehem.  They wanted to see what the angels had told them about."</item>
-        <item>"They found Mary and Joseph and saw the baby in the manger.  They were very happy.</item>  
-        <item>Some wise men saw a bright star in the east. They followed the star."</item>
+        <item>"They found Mary and Joseph and saw the baby in the manger.  They were very happy."</item>  
+        <item>"Some wise men saw a bright star in the east. They followed the star."</item>
         <item>"They carried precious gifts with them to present to Jesus.  They followed the star all the way to Bethlehem. The star stopped over the place where Jesus was."</item>
         <item>"The wise men knew that they found Jesus and they were very happy. They went into the house and saw the baby Jesus with his mother Mary."</item>
-        <item>"The wise men knelt down in front of the baby.  They gave gifts to Jesus. They gave him gold and frankincense and myrh.""</item>
+        <item>"The wise men knelt down in front of the baby.  They gave gifts to Jesus. They gave him gold and frankincense and myrh."</item>
+    </string-array>
+    
+    <!-- String array for The Parable of the Prodigal Son -->
+    <string-array name="the_prodigal_son">
+        <item>"There was a man who had two sons.  The younger one said to his father, 'Father, give me my share of the estate.'  So he divided his property between them."</item>
+        <item>"Not long after that, the younger son got together all he had, set off for a distant country and there squandered his wealth in wild living."</item>
+        <item>"After he had spent everything, there was a severe famine in that whole country, and he began to be in need.  So he went and hired himself out to a citizen of that country, who sent him to his field to feed pigs.  He longed to fill his stomach with the pods that the pigs were eating, but no one gave him anything."</item>
+        <item>"When he came to his senses, he said, 'How many of my father’s servants have food to spare, and here I am starving to death!' "</item>
+        <item>"'I will set out and go back to my father and say to him: Father, I have sinned against heaven and against you.  I am no longer worthy to be called your son; make me like one of your hired servants.'  So he got up and went to his father."</item>
+        <item>"But while he was still a long way off, his father saw him and was filled with compassion for him; he ran to his son, threw his arms around him and kissed him.  The son said to him, 'Father, I have sinned against heaven and against you.  I am no longer worthy to be called your son.' "</item>
+        <item>"But the father said to his servants, “Quick!  Bring the best robe and put it on him.  Put a ring on his finger and sandals on his feet.  Bring the fattened calf and kill it.  Let’s have a feast and celebrate.  For this son of mine was dead and is alive again; he was lost and is found.”  So they began to celebrate."</item>
+        <item>"Meanwhile, the older son came back from the field.  He heard music and saw dancing.  He asked one of the servants what was going on.  The servant replied that his brother came back home.  The older brother became angry and refused to go in to celebrate.  So his father went out and pleaded with him.  The father said, 'My son, you ate always with me, and everything I have is yours.  But we had to celebrate and be glad, because this brother of yours was dead and alive again; he was lost and is found.' "</item>
+    </string-array>
+    
+    <!-- String array for The Parable of Good Samaritan -->
+    <string-array name="the_good_samaritan">
+        <item>"There once was a Jewish man walking along a road.  He was coming from Jerusalem and was heading to Jericho, which was a full day or two of walking."</item>
+        <item>"The road was rocky and there were small hills all around.  The man was just humming to himself and enjoying the nice day when suddenly a group of men jumped out from behind a hill."</item>
+        <item>"They took all his belongings and tore off most of his clothes.  They didn't want him to follow them so they beat him up very badly, and left him lying and bleeding on the side of the road."</item>
+        <item>"A few minutes later a priest was walking down the same path and noticed the man lying on the side of the road.  Do you know what he did?  You'd think he would run over and help the man.  Instead he crossed the road and walked on the other side and acted like he didn't see the man."</item>
+        <item>"About an hour or so later another man called a Levite was walking down the road.  Levites are the people that assisted priests with their work.  He would probably help the man.  But you know what he did?  He slowed down and walked a little closer to the man, but then kept walking without helping him at all."</item>
+        <item>"Just a few minutes later another man came walking.  He was a Samaritan.  One thing you should know about Samaritans is that Jews didn't like them.  Jews usually didn't treat Samaritans very well, so they never got along.  The man who was dying on the road was a Jew.  But as soon as he saw the man he went over to him and felt compassion for him.  He put bandages on his sores and poured oil and wine (which were quite expensive) on the sores to prevent them from getting worse.  Then he lifted the man on his own donkey and took him to a hotel to take care of him."</item>
+        <item>"The next day the Samaritan took out enough money so the man could stay at the hotel until he was well enough to leave.  He paid the man at the front desk and asked him to take care of the man.  If he were not better after about two months the Samaritan would come back and pay for any extra cost."</item>
     </string-array>
 </resources>
