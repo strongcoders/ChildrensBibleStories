@@ -74,9 +74,14 @@ public class StoryPagerAdapter extends PagerAdapter {
 				audioPlayer.reset();
 				audioPlayer.release();
 			}
-			// Initialize the audio player...
-			audioPlayer = MediaPlayer.create(context, audios[arg0]);
-			audioPlayer.start();
+			
+			// Before initializing the audio player, check first if 
+			// there is an audio file inside the /res/raw folder.
+			if (audios[arg0] != 0) {
+				audioPlayer = MediaPlayer.create(context, audios[arg0]);
+				audioPlayer.start();
+			}
+			
 		}
 		
 		@Override
@@ -86,6 +91,7 @@ public class StoryPagerAdapter extends PagerAdapter {
 		@Override
 		public void onPageScrollStateChanged(int arg0) {
 		}
+		
 	};
 
 }

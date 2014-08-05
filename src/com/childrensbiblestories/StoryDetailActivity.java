@@ -35,16 +35,30 @@ public class StoryDetailActivity extends Activity {
         int[] imageDetails = null;
         int[] audioDetails = null;
         
-        if (storyName.equalsIgnoreCase("The Story of Christmas")) {
+        if (storyName.equalsIgnoreCase("The Birth of Jesus")) {
+        	
         	storyDetails = getResources().getStringArray(R.array.the_story_of_christmas);
         	imageDetails = new int[] {R.drawable.christmas1, R.drawable.christmas2, R.drawable.christmas3, 
         			R.drawable.christmas4, R.drawable.christmas5, R.drawable.christmas6, R.drawable.christmas7, 
         			R.drawable.christmas8, R.drawable.christmas9, R.drawable.christmas10, R.drawable.christmas11,
         			R.drawable.christmas12, R.drawable.christmas13};
-        	audioDetails = new int[] {R.raw.storyofchristmas1, R.raw.storyofchristmas2, R.raw.storyofchristmas3,
-        			R.raw.storyofchristmas4, R.raw.storyofchristmas5, R.raw.storyofchristmas6, R.raw.storyofchristmas7,
-        			R.raw.storyofchristmas8, R.raw.storyofchristmas9, R.raw.storyofchristmas10, R.raw.storyofchristmas11,
-        			R.raw.storyofchristmas12, R.raw.storyofchristmas13};
+        	audioDetails = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        	
+        } 
+        
+        if (storyName.equalsIgnoreCase("The Parable of the Prodigal Son")) {
+        	storyDetails = getResources().getStringArray(R.array.the_prodigal_son);
+        	imageDetails = new int[] {R.drawable.prodigal_son1, R.drawable.prodigal_son2, R.drawable.prodigal_son3, 
+        			R.drawable.prodigal_son4, R.drawable.prodigal_son5, R.drawable.prodigal_son6, R.drawable.prodigal_son7,
+        			R.drawable.prodigal_son8};
+        	audioDetails = new int[] {0, 0, 0, 0, 0, 0, 0, 0};
+        }
+        
+        if (storyName.equalsIgnoreCase("The Parable of Good Samaritan")) {
+        	storyDetails = getResources().getStringArray(R.array.the_good_samaritan);
+        	imageDetails = new int[] {R.drawable.samaritan1, R.drawable.samaritan2, R.drawable.samaritan3, 
+        			R.drawable.samaritan4, R.drawable.samaritan5, R.drawable.samaritan6, R.drawable.samaritan7};
+        	audioDetails = new int[] {0, 0, 0, 0, 0, 0, 0};
         }
         
         storyPagerAdapter = new StoryPagerAdapter(StoryDetailActivity.this, storyDetails, imageDetails, audioDetails);
@@ -52,7 +66,10 @@ public class StoryDetailActivity extends Activity {
         
         // Instantiate the first audio of the story...
         storyPager.getCurrentItem();
-        audioPlayer = MediaPlayer.create(this, audioDetails[0]);
+        
+        if (audioDetails[0] != 0) {
+        	audioPlayer = MediaPlayer.create(this, audioDetails[0]);
+        }
         
     }
     
