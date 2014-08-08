@@ -12,7 +12,6 @@
     <string-array name="old_testament_list">
         <item>"Adam and Eve"</item>
         <item>"Noah's Ark"</item>
-        <item>"Moses"</item>
         <item>"David and Goliath"</item>
     </string-array>
     
@@ -23,6 +22,50 @@
         <item>"The Parable of Good Samaritan"</item>
     </string-array>
     
+    <!-- String array for Adam and Eve -->
+    <string-array name="adam_and_eve">
+        <item>"God took some clay from the ground and made the shape of a man.  Then He breathed gently into the shape.  The man's eye's opened and he began to live.  God called him Adam."</item>
+        <item>"The Lord made a beautiful garden for him to live in.  The garden, called Eden, was full of many wonderful things.  Beautiful flowers grew everywhere.  Birds sang in the trees, streams flowed through the valley and animals roamed across the fields."</item>
+        <item>"God brought all the animals to Adam one at a time to be given their names.  \"Elephant\", he would say, or \"Giraffe\", or \"Crocodile\".  But God felt sorry for Adam.  \"None of these animals is really like him,\" thought God, \"he needs someone to share his life.  Someone who cares for him and who he can care for.\" "</item>
+        <item>"That night, God took a rib from Adam's side and made a woman.  When Adam awoke the following morning, he found a wife, Eve, lying asleep beside him.  Adam was so happy.  He took her hand and she woke up.  She looked up at him and smiled."</item>
+        <item>"God told the man and woman that it was their job to take care of their new home.  God blessed them, saying, \"All this is for you.  Help yourself to anything you like.  But never touch the tree in the middle of the Garden.  That tree gives knowledge of good and evil.  The day you eat its fruit, you will die.\" "</item>
+        <item>"One day, Adam and Eve were gathering berries for dinner when she heard a silky voice behind her.  \"Has God told you that you can eat the fruit from all the trees?\" the voice asked softly."</item>
+        <item>"Eve turned around to see a snake talking to her.  \"God has told us we can eat all the fruit except for what grows on The Tree of the Knowledge of Good and Evil,\" Eve told the serpent.  \"Oh come now, that's silly!  I hardly think such a lovely fruit would do you any harm,\" the serpent lied. \"God knows that if you eat from The Tree of the Knowledge of Good and Evil you'll become just like God, and will be able to decide for yourself what is right and what is wrong.\" "</item>
+        <item>"The woman looked at the fruit and thought how tasty it looked. She thought how wonderful it would be to be as wise and powerful as God.  She believed the serpent's lie and ate the fruit and also gave some to Adam, who was with her, and he took a bite as well."</item>
+        <item>"She felt a strange feeling in the pit of her stomach.  She fidgeted and wondered what was wrong with her.  Suddenly she realized that she was feeling guilty - she had disobeyed God and knew she'd done something wrong.  As soon as they ate the fruit a change came over Adam and Eve.  They became unhappy and fearful of God."</item>
+        <item>"Adam and Eve heard God calling them.  Without thinking, they dived into the bushes, but God knew where they were.  When God asked them if they had eaten from The Tree of the Knowledge of Good and Evil that He had told them not to touch, they blamed each other for their sins."</item>
+        <item>"God was sad that Adam and Eve had disobeyed them.  He told them that they had to leave the Garden of Eden, \"From now on you'll have to scratch a living from the soil.  You'll need to make clothes and grow food.  Nothing will come easily - not even childbirth.  And one day, you will die.\" "</item>
+    </string-array>
+    
+    <!-- String array for Noah's Ark -->
+    <string-array name="noahs_ark">
+        <item>"Once upon a time, a long, long time ago, there lived a man named Noah.  Noah was a very good man, and God loved him because he lived like God wanted him to live.  God talked to Noah one day and said, \"Noah! Noah!  I have to put an end to all of the bad people and giants on the earth.  I will destroy them all, people and animals, by sending a Great Flood, to wash them all away.  I want you and your family, to build an ark out of gopher wood.  Make it with rooms inside and make it really, really big.  Put a window in the top, so light can get in, and build a door on the side.  I want you to make it three stories tall with rooms inside.\" "</item>
+        <item>"God told Noah all the measurements to use in making the ark, like how long and how high and how wide to make it.  Then God said, \"I am going to send two of every kind of living thing on the earth to keep them alive during the Great Flood.  They are going to live with you and your family on the ark.  And I will start my promise with you.\" "</item>
+        <item>"Noah didn't care that the people were laughing at him.  He didn't let the people or anything that they said, bother him because he knew what was going to happen.  He was very happy doing whatever God told him to do, whistling and singing while he worked.  It took a very long time to build the ark.  Many days were spent cutting and lifting and measuring and fitting.  It was hard work."</item>
+        <item>"When the ark was finished, God told Noah to start loading the ark with his family and the animals because in seven days, the rain would start.  God said it would rain for forty days and forty nights, and that would destroy every living thing on the earth.  The animals knew they were supposed to go to the ark because God led them there.  God made all the wild animals calm for the time that they were on the ark.  The animals walked on to the ark two by two."</item>
+        <item>"So, Noah did what God told him to do, and he, and his family started bringing everything God told him to bring, onto the ark.  Noah was six hundred years old when he finished the job that God had given him."</item>
+        <item>"As soon as the ark was closed up tight, it began to rain.  The water from the rain grew deeper and deeper on the earth and the water from the oceans and the seas even began to rise.  The ark, with all that was inside, floated on top of the water, above the earth.  The whole earth became covered in water, and it all happened, just as God had said it would."</item>
+        <item>"Then, God sent a wind to help dry up the water.  Noah and his family were so glad when the rain stopped.  Now they had to wait for all the water to dry up before they all could get off of the ark because the whole world was just one big, huge ocean of water."</item>
+        <item>"After a while, the ark finally rested on a mountain.  Noah sent a raven from the ark to fly here and there until the waters were dried up from off the earth.   Noah also sent a dove out of the window in the top of the ark to see if the water was dried up, but the dove returned because there was no place for her to land.  So, Noah waited for seven days and then he sent her out again, and when she came back, in her mouth, there was an olive branch."</item>
+        <item>"Now Noah knew that the water was all dried up because the dove could land on the earth and live there again."</item>
+        <item>"God told Noah and his family to leave the ark and to let all the animals off of the ark, to go free."</item>
+        <item>"He told them all to go and have families to fill up the earth again with new people and new animals."</item>
+        <item>"Then God told Noah the promise that he spoke about before the flood.  \"I promise I will never send a flood again to destroy the earth and the people and all the living things on the earth.  As a sign of my promise, whenever it rains, I will bring a rainbow over the earth and you will be able to see it in the sky.  And I will see the rainbow and remember the promise I made with all the living things on the earth.\" "</item>
+    </string-array>
+    
+    <!-- String array for David and Goliath -->
+    <string-array name="david_and_goliath">
+        <item>"There was a Philistine named Goliath.  He is strongest and biggest giant.  Goliath was covered with armor to protect him and carried a big spear.  Every morning and every evening for forty days he shouted to the Israelites in his big deep voice, \"Hey, you Israelites!  I dare you to find one man to fight me.  If he can beat me we will become your servants, but if I win you will all become our servants.\" "</item>
+        <item>"When the Israelites heard this they were very afraid.  Three of those men were David’s three oldest brothers.  They are the only ones in David’s family that could go fight because they were old enough."</item>
+        <item>"Now David’s father Jesse heard about the giant and was worried for his sons.  He called David out of the fields and asked him to take some food to his brothers and report back how they are doing."</item>
+        <item>"So David off to visit his brothers.  As he approached them he heard Goliath shouting his challenge like he did every morning.  \"Isn’t someone going to stand up to this man?\"  David asked the men in the army.  \"Then I will fight this giant Philistine.\" "</item>
+        <item>"One of the men overheard this and ran to Saul and told him what David said.  Saul approached David and said, \"You can't fight Goliath, you're only a boy and he has been fighting for many years.\"  But David said to Saul, \"I have had to fight lions and bears to protect my father's sheep.  God helped keep me safe then and he will help keep me safe now.\" "</item>
+        <item>"So Saul dressed David in heavy armor to protect him from Goliath but David took it off.  It was so heavy he could hardly walk and he knew that God would keep him from harm."</item>
+        <item>"Instead David went to a stream nearby and found five smooth stones, put them in a pouch around his waist, and with his sling he went to Goliath."</item>
+        <item>"As David approached Goliath, Goliath looked at David and thought it was a joke.  Goliath thought that he could easily beat David and it was funny that Saul would send a small boy to fight him.  But David said to him without fear, \"You fight with a sword and I come with God on my side and today everyone will know that there is one true God in this land.\" "</item>
+        <item>"Goliath didn't care what David said and he moved closer to attack him, David ran quickly to meet him.  Reaching into his pouch he pulled out a stone, put it into his slingshot and shot it at Goliath.  The stone had hit him right between his eyes and suddenly Goliath started to loose his balance.  He fell with a loud thud right on his face.  David beat the giant Philistine!  When the rest of the Philistines saw this they ran away and David became a hero to all the people in Israel."</item>
+    </string-array>
+    
     <!-- String array for The Story of Christmas -->
     <string-array name="the_story_of_christmas">
         <item>"Mary and Joseph went to Bethlehem. It was a long Journey. Mary was soon going to have a baby."</item>
@@ -30,8 +73,8 @@
         <item>"That night Mary had her baby. She wrapped him in cloth and put him to sleep in the manger."</item>
         <item>"During the night in the fields outside Bethlehem shepherds were guarding their sheep."</item>
         <item>"Suddenly an angel appeared to the shepherds.  All around them was very bright. They were afraid."</item>
-        <item>"The angel said to them, 'Do not be afraid! I have a good news for you. This night Jesus was born in Bethlehem. Go and see him. He is wrapped in cloth and is lying in the manger.' "</item>
-        <item>"Suddenly a huge number of angels appeared. They sang a hymn praising God. 'Glory to God in Heaven. May peace fill the earth. God is with his people.' "</item>
+        <item>"The angel said to them, \"Do not be afraid! I have a good news for you. This night Jesus was born in Bethlehem. Go and see him. He is wrapped in cloth and is lying in the manger.\" "</item>
+        <item>"Suddenly a huge number of angels appeared. They sang a hymn praising God. \"Glory to God in Heaven. May peace fill the earth. God is with his people.\" "</item>
         <item>"After the angels left, the shepherds hurried to Bethlehem.  They wanted to see what the angels had told them about."</item>
         <item>"They found Mary and Joseph and saw the baby in the manger.  They were very happy."</item>  
         <item>"Some wise men saw a bright star in the east. They followed the star."</item>
@@ -42,14 +85,14 @@
     
     <!-- String array for The Parable of the Prodigal Son -->
     <string-array name="the_prodigal_son">
-        <item>"There was a man who had two sons.  The younger one said to his father, 'Father, give me my share of the estate.'  So he divided his property between them."</item>
+        <item>"There was a man who had two sons.  The younger one said to his father, \"Father, give me my share of the estate.\"  So he divided his property between them."</item>
         <item>"Not long after that, the younger son got together all he had, set off for a distant country and there squandered his wealth in wild living."</item>
         <item>"After he had spent everything, there was a severe famine in that whole country, and he began to be in need.  So he went and hired himself out to a citizen of that country, who sent him to his field to feed pigs.  He longed to fill his stomach with the pods that the pigs were eating, but no one gave him anything."</item>
-        <item>"When he came to his senses, he said, 'How many of my father’s servants have food to spare, and here I am starving to death!' "</item>
-        <item>"'I will set out and go back to my father and say to him: Father, I have sinned against heaven and against you.  I am no longer worthy to be called your son; make me like one of your hired servants.'  So he got up and went to his father."</item>
-        <item>"But while he was still a long way off, his father saw him and was filled with compassion for him; he ran to his son, threw his arms around him and kissed him.  The son said to him, 'Father, I have sinned against heaven and against you.  I am no longer worthy to be called your son.' "</item>
-        <item>"But the father said to his servants, “Quick!  Bring the best robe and put it on him.  Put a ring on his finger and sandals on his feet.  Bring the fattened calf and kill it.  Let’s have a feast and celebrate.  For this son of mine was dead and is alive again; he was lost and is found.”  So they began to celebrate."</item>
-        <item>"Meanwhile, the older son came back from the field.  He heard music and saw dancing.  He asked one of the servants what was going on.  The servant replied that his brother came back home.  The older brother became angry and refused to go in to celebrate.  So his father went out and pleaded with him.  The father said, 'My son, you ate always with me, and everything I have is yours.  But we had to celebrate and be glad, because this brother of yours was dead and alive again; he was lost and is found.' "</item>
+        <item>"When he came to his senses, he said, \"How many of my father’s servants have food to spare, and here I am starving to death!\" "</item>
+        <item>"\"I will set out and go back to my father and say to him: Father, I have sinned against heaven and against you.  I am no longer worthy to be called your son; make me like one of your hired servants.\"  So he got up and went to his father."</item>
+        <item>"But while he was still a long way off, his father saw him and was filled with compassion for him; he ran to his son, threw his arms around him and kissed him.  The son said to him, \"Father, I have sinned against heaven and against you.  I am no longer worthy to be called your son.\" "</item>
+        <item>"But the father said to his servants, \"Quick!  Bring the best robe and put it on him.  Put a ring on his finger and sandals on his feet.  Bring the fattened calf and kill it.  Let’s have a feast and celebrate.  For this son of mine was dead and is alive again; he was lost and is found.\"  So they began to celebrate."</item>
+        <item>"Meanwhile, the older son came back from the field.  He heard music and saw dancing.  He asked one of the servants what was going on.  The servant replied that his brother came back home.  The older brother became angry and refused to go in to celebrate.  So his father went out and pleaded with him.  The father said, \"My son, you ate always with me, and everything I have is yours.  But we had to celebrate and be glad, because this brother of yours was dead and alive again; he was lost and is found.\" "</item>
     </string-array>
     
     <!-- String array for The Parable of Good Samaritan -->
