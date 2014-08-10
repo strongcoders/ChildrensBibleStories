@@ -1,7 +1,9 @@
 package com.childrensbiblestories;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
@@ -41,7 +43,9 @@ public class StoryDetailActivity extends Activity {
         	imageDetails = new int[] {R.drawable.adam_and_eve1, R.drawable.adam_and_eve2, R.drawable.adam_and_eve3, 
         			R.drawable.adam_and_eve4, R.drawable.adam_and_eve5, R.drawable.adam_and_eve6, R.drawable.adam_and_eve7, 
         			R.drawable.adam_and_eve8, R.drawable.adam_and_eve9, R.drawable.adam_and_eve10, R.drawable.adam_and_eve11};
-        	audioDetails = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        	audioDetails = new int[] {R.raw.adam_and_eve1, R.raw.adam_and_eve2, R.raw.adam_and_eve3, R.raw.adam_and_eve4, 
+        			R.raw.adam_and_eve5, R.raw.adam_and_eve6, R.raw.adam_and_eve7, R.raw.adam_and_eve8, R.raw.adam_and_eve9, 
+        			R.raw.adam_and_eve10, R.raw.adam_and_eve11};
         	
         }
         
@@ -52,7 +56,8 @@ public class StoryDetailActivity extends Activity {
         			R.drawable.noah4, R.drawable.noah5, R.drawable.noah6, R.drawable.noah7, 
         			R.drawable.noah8, R.drawable.noah9, R.drawable.noah10, R.drawable.noah11,
         			R.drawable.noah12};
-        	audioDetails = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        	audioDetails = new int[] {R.raw.noah1, R.raw.noah2, R.raw.noah3, R.raw.noah4, R.raw.noah5, R.raw.noah6, 
+        			R.raw.noah7, R.raw.noah8, R.raw.noah9, R.raw.noah10, R.raw.noah11, R.raw.noah12};
         	
         }
         
@@ -62,7 +67,8 @@ public class StoryDetailActivity extends Activity {
         	imageDetails = new int[] {R.drawable.david_and_goliath1, R.drawable.david_and_goliath2, R.drawable.david_and_goliath3, 
         			R.drawable.david_and_goliath4, R.drawable.david_and_goliath5, R.drawable.david_and_goliath6, R.drawable.david_and_goliath7, 
         			R.drawable.david_and_goliath8, R.drawable.david_and_goliath9};
-        	audioDetails = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0};
+        	audioDetails = new int[] {R.raw.david1, R.raw.david2,R.raw.david3, R.raw.david4, R.raw.david5, R.raw.david6, 
+        			R.raw.david7, R.raw.david8, R.raw.david9};
         	
         }
         
@@ -92,7 +98,8 @@ public class StoryDetailActivity extends Activity {
         	storyDetails = getResources().getStringArray(R.array.the_good_samaritan);
         	imageDetails = new int[] {R.drawable.samaritan1, R.drawable.samaritan2, R.drawable.samaritan3, 
         			R.drawable.samaritan4, R.drawable.samaritan5, R.drawable.samaritan6, R.drawable.samaritan7};
-        	audioDetails = new int[] {0, 0, 0, 0, 0, 0, 0};
+        	audioDetails = new int[] {R.raw.samaritan1, R.raw.samaritan2, R.raw.samaritan3, R.raw.samaritan4, R.raw.samaritan5, 
+        			R.raw.samaritan6, R.raw.samaritan7};
         }
         
         storyPagerAdapter = new StoryPagerAdapter(StoryDetailActivity.this, storyDetails, imageDetails, audioDetails);
@@ -110,7 +117,13 @@ public class StoryDetailActivity extends Activity {
     @Override
     public void onStart() {
     	if (audioPlayer != null) {
-    		audioPlayer.start();
+    		// If the play audio settings is checked, play the audio else, don't play...
+            SharedPreferences sharedPref = getSharedPreferences("AudioPlay", Context.MODE_PRIVATE);
+            boolean isAudioPlay = sharedPref.getBoolean("is_audio_play", false);
+    		
+            if (isAudioPlay == true) {
+            	audioPlayer.start();
+            }
     	}
     	
     	super.onStart();

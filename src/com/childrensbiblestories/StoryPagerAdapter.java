@@ -1,6 +1,7 @@
 package com.childrensbiblestories;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -43,8 +44,8 @@ public class StoryPagerAdapter extends PagerAdapter {
 		View itemView = inflater.inflate(R.layout.viewpage_story, container, false);
 		
 		// Locate and set the value of ImageView component in the viewpage_story.xml...
-		ImageView imageDetailsPage = (ImageView) itemView.findViewById(R.id.image_details_page);
-		imageDetailsPage.setImageResource(images[position]);
+		ImageView storyDetailsImage = (ImageView) itemView.findViewById(R.id.story_details_images);
+		storyDetailsImage.setBackgroundResource(images[position]);
 		
 		// Locate and set the value of TextView component in the viewpage_story.xml...
 		TextView storyDetailsPage = (TextView) itemView.findViewById(R.id.story_details_page);
@@ -78,8 +79,15 @@ public class StoryPagerAdapter extends PagerAdapter {
 			// Before initializing the audio player, check first if 
 			// there is an audio file inside the /res/raw folder.
 			if (audios[arg0] != 0) {
-				audioPlayer = MediaPlayer.create(context, audios[arg0]);
-				audioPlayer.start();
+				// If the play audio settings is checked, play the audio else, don't play...
+				SharedPreferences sharedPref = context.getSharedPreferences("AudioPlay", Context.MODE_PRIVATE);
+				boolean isAudioPlay = sharedPref.getBoolean("is_audio_play", false);
+				
+				if (isAudioPlay == true) {
+					audioPlayer = MediaPlayer.create(context, audios[arg0]);
+					audioPlayer.start();
+				}
+				
 			}
 			
 		}

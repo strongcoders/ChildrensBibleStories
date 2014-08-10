@@ -13,6 +13,8 @@ public class MainActivity extends Activity
 {
     
     private Button btnSelectStory;
+    private Button btnSettings;
+    private Button btnAbout;
     
     /** Called when the activity is first created. */
     @Override
@@ -28,11 +30,30 @@ public class MainActivity extends Activity
         
         btnSelectStory = (Button) findViewById(R.id.btn_select_story);
         btnSelectStory.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
+        	@Override
+        	public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SelectStoryActivity.class);
                 startActivity(intent);
             }
         });
+        
+        btnSettings = (Button) findViewById(R.id.btn_settings);
+        btnSettings.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(intent);
+			}
+		});
+        
+        btnAbout = (Button) findViewById(R.id.btn_about);
+        btnAbout.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(intent);
+			}
+		});
     }
     
 }
