@@ -8,6 +8,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -16,6 +17,7 @@ public class StoryDetailActivity extends Activity {
 	private ViewPager storyPager;
 	private PagerAdapter storyPagerAdapter;
 	private MediaPlayer audioPlayer = null;
+	private int[] audioDetails = null;
 	
     /** Called when the activity is first created. */
     @Override
@@ -35,7 +37,6 @@ public class StoryDetailActivity extends Activity {
         String storyName = intent.getExtras().getString("STORY_NAME");
         String[] storyDetails = null;
         int[] imageDetails = null;
-        int[] audioDetails = null;
         
         if (storyName.equalsIgnoreCase("Adam and Eve")) {
         	
@@ -102,8 +103,9 @@ public class StoryDetailActivity extends Activity {
         			R.raw.samaritan6, R.raw.samaritan7};
         }
         
-        storyPagerAdapter = new StoryPagerAdapter(StoryDetailActivity.this, storyDetails, imageDetails, audioDetails);
+        storyPagerAdapter = new StoryPagerAdapter(StoryDetailActivity.this, storyDetails, imageDetails);
         storyPager.setAdapter(storyPagerAdapter);
+        storyPager.setOnPageChangeListener(onPageListener);
         
         // Instantiate the first audio of the story...
         storyPager.getCurrentItem();
@@ -113,6 +115,44 @@ public class StoryDetailActivity extends Activity {
         }
         
     }
+    
+    public OnPageChangeListener onPageListener = new OnPageChangeListener() {
+		
+		@Override
+		public void onPageSelected(int arg0) {
+			// Before initializing the audio player, check first if 
+			// there is an audio file inside the /res/raw folder.
+			if (audioDetails[arg0] != 0) {
+				// If the play audio settings is checked, play the audio else, don't play...
+				SharedPreferences sharedPref = StoryDetailActivity.this.getSharedPreferences("AudioPlay", Context.MODE_PRIVATE);
+				boolean isAudioPlay = sharedPref.getBoolean("is_audio_play", false);
+				
+				if (isAudioPlay == true) {
+					audioPlayer = MediaPlayer.create(StoryDetailActivity.this, audioDetails[arg0]);
+					audioPlayer.start();
+				}
+				
+			}
+			
+		}
+		
+		@Override
+		public void onPageScrolled(int arg0, float arg1, int arg2) {
+		}
+		
+		@Override
+		public void onPageScrollStateChanged(int arg0) {
+			// This will stop the audio playing while dragging 
+			// the page to the left or to the right...
+			if (arg0 == ViewPager.SCROLL_STATE_DRAGGING) {
+				if (audioPlayer != null && audioPlayer.isPlaying()) {
+					audioPlayer.stop();
+					audioPlayer.release();
+				}
+			}
+		}
+		
+	};
     
     @Override
     public void onStart() {
@@ -127,6 +167,16 @@ public class StoryDetailActivity extends Activity {
     	}
     	
     	super.onStart();
+    }
+    
+    @Override
+    public void onBackPressed() {
+    	if (audioPlayer != null) {
+    		audioPlayer.stop();
+    		audioPlayer.release();
+    	}
+    	
+    	super.onBackPressed();
     }
     
 }

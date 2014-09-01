@@ -1,6 +1,8 @@
 package com.childrensbiblestories;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -56,4 +58,28 @@ public class MainActivity extends Activity
 		});
     }
     
+    @Override
+    public void onBackPressed() {
+    	AlertDialog.Builder exitDialog = new AlertDialog.Builder(this);
+    	exitDialog.setMessage("Are you sure you want to exit?");
+    	exitDialog.setCancelable(false);
+    	
+    	exitDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				MainActivity.super.onBackPressed();
+			}
+		});
+    	
+    	exitDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// Do nothing here...
+			}
+		});
+    	
+    	exitDialog.create().show();
+    }
 }

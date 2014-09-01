@@ -1,11 +1,8 @@
 package com.childrensbiblestories;
 
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.media.MediaPlayer;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,14 +15,11 @@ public class StoryPagerAdapter extends PagerAdapter {
 	private Context context;
 	private String[] stories;
 	private int[] images;
-	private int[] audios;
-	private MediaPlayer audioPlayer = null;
 	
-	public StoryPagerAdapter(Context ctx, String[] storyDetails, int[] imageDetails, int[] audioDetails) {
+	public StoryPagerAdapter(Context ctx, String[] storyDetails, int[] imageDetails) {
 		this.context = ctx;
 		this.stories = storyDetails;
 		this.images = imageDetails;
-		this.audios = audioDetails;
 	}
 	
 	@Override
@@ -55,9 +49,6 @@ public class StoryPagerAdapter extends PagerAdapter {
 		ViewPager viewPager = (ViewPager) container;
 		viewPager.addView(itemView);
 		
-		// Set the OnPageChangeListener...
-		viewPager.setOnPageChangeListener(onPageListener);
-		
 		return itemView;
 	}
 	
@@ -66,40 +57,5 @@ public class StoryPagerAdapter extends PagerAdapter {
         // Remove viewpage_story.xml from ViewPager...
         ((ViewPager) container).removeView((LinearLayout) object);
     }
-	
-	public OnPageChangeListener onPageListener = new OnPageChangeListener() {
-		
-		@Override
-		public void onPageSelected(int arg0) {
-			if (audioPlayer != null) {
-				audioPlayer.reset();
-				audioPlayer.release();
-			}
-			
-			// Before initializing the audio player, check first if 
-			// there is an audio file inside the /res/raw folder.
-			if (audios[arg0] != 0) {
-				// If the play audio settings is checked, play the audio else, don't play...
-				SharedPreferences sharedPref = context.getSharedPreferences("AudioPlay", Context.MODE_PRIVATE);
-				boolean isAudioPlay = sharedPref.getBoolean("is_audio_play", false);
-				
-				if (isAudioPlay == true) {
-					audioPlayer = MediaPlayer.create(context, audios[arg0]);
-					audioPlayer.start();
-				}
-				
-			}
-			
-		}
-		
-		@Override
-		public void onPageScrolled(int arg0, float arg1, int arg2) {
-		}
-		
-		@Override
-		public void onPageScrollStateChanged(int arg0) {
-		}
-		
-	};
 
 }
