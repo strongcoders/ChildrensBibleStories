@@ -111,4 +111,78 @@
         <item>"Just a few minutes later another man came walking.  He was a Samaritan.  One thing you should know about Samaritans is that Jews didn't like them.  Jews usually didn't treat Samaritans very well, so they never got along.  The man who was dying on the road was a Jew.  But as soon as he saw the man he went over to him and felt compassion for him.  He put bandages on his sores and poured oil and wine (which were quite expensive) on the sores to prevent them from getting worse.  Then he lifted the man on his own donkey and took him to a hotel to take care of him."</item>
         <item>"The next day the Samaritan took out enough money so the man could stay at the hotel until he was well enough to leave.  He paid the man at the front desk and asked him to take care of the man.  If he were not better after about two months the Samaritan would come back and pay for any extra cost."</item>
     </string-array>
+    
+    <!-- String array for interactive questions -->
+    <string-array name="quiz_questions">
+        <item>"Where did Joseph and Mary went to?"</item>
+        <item>"What does GOD asked for Noah to build?"</item>
+        <item>"How did David defeated Goliath?"</item>
+        <item>"Who helped the Jewish man when he was robbed and beaten so badly?"</item>
+        <item>"What are the gifts that the wise men gave to Baby Jesus?"</item>
+        <item>"In the story of the \"The Prodigal Son\", who asked to get his share of his estate?"</item>
+        <item>"What fruit does GOD forbidden to eat by Adam and Eve?"</item>
+        <item>"How many brothers does David who are at war with the Philistine?"</item>
+        <item>"How old is Noah when he finished the ark?"</item>
+        <item>"What animal talked to Eve?"</item>
+    </string-array>
+    
+    <string-array name="answer_set_1">
+        <item>"To Judea"</item>
+        <item>"To Betlehem"</item>
+        <item>"To Rome"</item>
+    </string-array>
+    
+    <string-array name="answer_set_2">
+        <item>"A mansion"</item>
+        <item>"A cart"</item>
+        <item>"An ark"</item>
+    </string-array>
+    
+    <string-array name="answer_set_3">
+        <item>"He threw a stone using his sling."</item>
+        <item>"He used a heavy machine gun."</item>
+        <item>"He used a light-saber sword."</item>
+    </string-array>
+    
+    <string-array name="answer_set_4">
+        <item>"A Priest"</item>
+        <item>"A Businessman"</item>
+        <item>"A Samaritan"</item>
+    </string-array>
+    
+    <string-array name="answer_set_5">
+        <item>"Gold, Frankincense and Myrh"</item>
+        <item>"Gold, Silver and Bronze"</item>
+        <item>"Gold, Marble and Diamond"</item>
+    </string-array>
+    
+    <string-array name="answer_set_6">
+        <item>"The older brother"</item>
+        <item>"The younger brother"</item>
+        <item>"The old man"</item>
+    </string-array>
+    
+    <string-array name="answer_set_7">
+        <item>"Banana"</item>
+        <item>"Fruit from the Tree of Knowledge of Good and Evil."</item>
+        <item>"Jackfruit"</item>
+    </string-array>
+    
+    <string-array name="answer_set_8">
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+    </string-array>
+    
+    <string-array name="answer_set_9">
+        <item>"400 years old"</item>
+        <item>"500 years old"</item>
+        <item>"600 years old"</item>
+    </string-array>
+    
+    <string-array name="answer_set_10">
+        <item>"Snake"</item>
+        <item>"Frog"</item>
+        <item>"Slug"</item>
+    </string-array>
 </resources>
